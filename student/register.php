@@ -37,7 +37,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         
         // Set success message and redirect
         $_SESSION['success'] = "Registration successful! Please login.";
-        header('Location: ../index.php');
+        header('Location: ../login.php');
         exit();
         
     } catch (Exception $e) {
@@ -140,7 +140,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                             </div>
                         </form>
                         <div class="text-center mt-3">
-                            <a href="../index.php">Already have an account? Login here</a>
+                            <a href="../login.php">Already have an account? Login here</a>
                         </div>
                     </div>
                 </div>
